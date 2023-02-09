@@ -57,7 +57,7 @@ install() {
   #   https://github.com/sheepla/pingu/releases/download/v0.0.4-alpha/pingu_0.0.4-alpha_Linux_arm64.tar.gz
   #   https://github.com/sheepla/pingu/releases/download/v0.0.4-alpha/pingu_0.0.4-alpha_Linux_x86_64.tar.gz
   # generate url
-  local url="${PACKAGE_CORE_RELEASE_DOWNLOAD}/$PACKAGE_CORE_VERSION/${name}-${PACKAGE_CORE_VERSION#v}-${platform}-${arch}.tar.gz"
+  local url="${PACKAGE_CORE_RELEASE_DOWNLOAD}/$PACKAGE_CORE_VERSION/${name}_${PACKAGE_CORE_VERSION#v}_${platform}_${arch}.tar.gz"
   log::debug "[$(timestamp)][package][$name][$kernel][$arch] url: $url, file: ${tmp_file}, tmp_dir: $tmp_dir"
 
   # download
